@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Chat App By Bishnudev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main>
+        <header class="header" >
+            <div class="title">
+                <img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" width="35px"/>
+                <h1>Ocean Chat</h1>
+            </div>
+            <button type="button" onclick="window.location.reload();">
+                <img src="https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/56/000000/external-single-natural-user-reload-arrow-key-layout-closeupman-fresh-tal-revivo.png" width="50px"/>
+            </button>
+        </header>
+        <div class="container">
+            <div class="chat-window">
+                <div class="chats">
+                </div>
+                <div class="user-input">
+                    <input id="user-msg" type="text" placeholder="Enter your message...">
+                    <img id="user-send" src="https://img.icons8.com/color/48/000000/send-letter--v1.png"/>
+                </div>
+                <!-- <p class="text-footer background">Copyrighted by &copy; Bishnudev. All Rights Reserved.</p> -->
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/client.js"></script>
+
+</html>
